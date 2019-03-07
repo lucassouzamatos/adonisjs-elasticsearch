@@ -16,4 +16,8 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-Route.on('/').render('welcome')
+const ElasticClient = use('Souzalc/ElasticSearch/Client');
+Route.get('/', ({ response }) => {
+    console.log(ElasticClient);
+    response.json('rest');
+})
