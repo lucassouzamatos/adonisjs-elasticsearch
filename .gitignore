@@ -1,2 +1,6 @@
 *
 !*/providers
+
+!package.json
+!yarn.lock
+!LICENSE
