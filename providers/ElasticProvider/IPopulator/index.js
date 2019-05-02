@@ -8,4 +8,4 @@ class Populator {
     };
 }
 
-module.exports = Populator; 
+module.exports = Populator;

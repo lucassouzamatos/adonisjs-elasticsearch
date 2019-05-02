@@ -1,4 +1,4 @@
-var elasticsearch = require('elasticsearch');
+const elasticsearch = require('@elastic/elasticsearch')
 
 class Client {
     constructor(Config) {
@@ -10,8 +10,7 @@ class Client {
         };
 
         this._client = new elasticsearch.Client({
-            host: `${host}:${port}`,
-            log: 'trace'
+            host: `${host}:${port}`
           });
 
         return this._client;
