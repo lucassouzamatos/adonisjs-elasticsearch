@@ -8,12 +8,12 @@ Após a instalação, é necessário registrar os providers e comandos no `start
 ```javascript
 const providers = [
   ...,
-  '---/providers/ElasticProvider'
+  'souzalc-elastic/providers/ElasticProvider'
 ]
 
 const commands = [
   ...,
-  '---/providers/ElasticProvider/Commands/ElasticMigrate',
-  '---/providers/ElasticProvider/Commands/ElasticConfigure'
+  'souzalc-elastic/providers/ElasticProvider/Commands/ElasticMigrate',
+  'souzalc-elastic/providers/ElasticProvider/Commands/ElasticConfigure'
 ]
 ```
