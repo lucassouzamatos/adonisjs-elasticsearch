@@ -9,8 +9,8 @@ class Client {
         };
 
         this._client = new ElasticClient({
-            node: `${host}:${port}`,
-          });
+          node: `${host}:${port}`
+        });
 
         return this._client;
     }

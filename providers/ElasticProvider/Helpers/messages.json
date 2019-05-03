@@ -1,0 +1,5 @@
+{
+  "migrate_description": "Migrate a type to Elastic Search",
+  "migrate_signature": "elastic:migrate { type }",
+  "migrate_index_doenst_exist": "Type '<type>' doesn't exist"
+}
