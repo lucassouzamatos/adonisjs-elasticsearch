@@ -1,16 +1,15 @@
-const elasticsearch = require('@elastic/elasticsearch')
+const { Client: ElasticClient } = require('@elastic/elasticsearch')
 
 class Client {
     constructor(Config) {
         this._config = Config.get('elasticsearch');
-
         const { host, port } = this._config || {
-            host: 'localhost',
+            host: 'http://localhost',
             port: 9200
         };
 
-        this._client = new elasticsearch.Client({
-            host: `${host}:${port}`
+        this._client = new ElasticClient({
+            node: `${host}:${port}`,
           });
 
         return this._client;
